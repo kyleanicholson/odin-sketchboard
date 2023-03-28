@@ -18,8 +18,8 @@ The Sketchboard App has several features that make it easy and fun to use:
 
 To use the Sketchboard App, follow these simple steps:
 
-Open the app in your web browser.
-Choose the sketching tool you want to use.
-Select a color, if desired.
-Start drawing on the canvas.
-Save your sketch or generate a shareable link to share it with others.
+1. Open the app in your web browser.
+2. Choose the sketching tool you want to use.
+3. Select a color, if desired.
+4. Start drawing on the canvas.
+5. Save your sketch or generate a shareable link to share it with others.

@@ -1,0 +1,142 @@
+
+
+* {
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+}
+h1{
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #333;
+  color: #fff;
+}
+
+.container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:55vh;
+  margin: 0 auto;
+  padding: 15px;
+
+}
+
+
+.sketchboard {
+  display: flex;
+  width: 500px;
+  height: 250px;
+  padding: 15px;
+  background-color: lightgray;
+  border: 1px solid #000;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Controls formatting */
+
+.sketchboard__controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 45%;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sketchboard__controls h4 {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.sketchboard__controls__color label {
+  font-size: 16px;
+  font-weight: bold;
+}
+.sketchboard__controls__color input[type="color"] {
+  width: 100%;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+.sketchboard__controls__eraser{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+.sketchboard__controls__clear button {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.sketchboard__controls__clear button:hover {
+  background-color: #555;
+}
+#sketchboard__canvas {
+
+  display:flex;
+  flex-wrap: wrap;
+  flex-basis: 55%;
+  min-height: 100%;
+  border: 1px solid #000;
+  z-index: 1;
+}
+
+.grid-element{
+  width:calc(100%/16);
+  height:calc(100%/16);
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.grid-element:hover{
+  transform: scale(1.1);
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+footer a {
+  color: #90EE90;
+  text-decoration: none;
+}
+footer p{
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+}

@@ -6,7 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sketchboard</title>
     <link rel="stylesheet" href="style.css" />
-    <script src=".js"></script>
+    <script src="app.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Blank Slate Drawing App</h1>
+    </header>
+    <div class="container">
+      <div class="sketchboard">
+        <div id="sketchboard__canvas"></div>
+        <div class="sketchboard__controls">
+          <h4>Control Panel</h4>
+          <div class="sketchboard__controls__color">
+            <label for="color">Color</label>
+            <input type="color" id="color" />
+          </div>
+          <!-- <div class="sketchboard__controls__eraser">
+            <label for="eraser">Eraser</label>
+            <input type="checkbox" id="eraser" />
+          </div> -->
+          <div class="sketchboard__controls__clear">
+            <button id="clear">Clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Created by <a href="https://kylenicholson.dev">Kyle Nicholson</a> &copy
+        2023
+      </p>
+    </footer>
+  </body>
 </html>
