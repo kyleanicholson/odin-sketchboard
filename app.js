@@ -1,15 +1,19 @@
 // Prevent a ghost image from appearing when dragging on canvas
 document.addEventListener("dragstart", (e) => e.preventDefault());
 
+
+
 // Select sketchboard canvas div
 const container = document.querySelector("#sketchboard__canvas");
 
 // Select eraser checkbox
 const eraserCheckbox = document.querySelector("#eraser");
 
-// Create a 16 x 16 grid of divs
-for (let i = 0; i < 256; i++) {
+// Create a 32 x 32 grid of divs
+for (let i = 0; i < 1024; i++) {
   const div = document.createElement("div");
+  // Prevent blinking cursor from appearing on grid elements when clicked
+  div.addEventListener("mousedown", (e) => e.preventDefault());
   div.classList.add("grid-element");
   container.appendChild(div);
 }
