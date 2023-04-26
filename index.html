@@ -19,25 +19,29 @@
     <script src="app.js" defer></script>
   </head>
   <body class="text-center bg-dark d-flex flex-column align-content-between">
-    <div class="sketchboard-container d-flex flex-column bg-secondary-subtle p-4">
+    <div
+      class="sketchboard-container d-flex flex-column align-content-center align-items-center bg-secondary-subtle p-4"
+    >
       <h1 class="display-2">OdinSketch</h1>
-      <div class="sketchboard d-flex flex-column bg-light border border-primary-subtle">
-        <div id="sketchboard__canvas" class="d-flex p-1"></div>
-        <div class="sketchboard__controls d-flex flex-column bg-primary-subtle text-dark border border-primary-subtle">
+      <div
+        class="sketchboard d-flex flex-column bg-light border border-primary-subtle"
+      >
+        <div id="sketchboard__canvas" class="d-flex p-2"></div>
+        <div
+          class="sketchboard__controls d-flex p-3 flex-column bg-primary-subtle text-dark border border-primary-subtle"
+        >
           <h4>Controls</h4>
-          <div class="container d-flex align-content-center justify-content-center">
-            <div class="sketchboard__controls__color">
-              <label for="color-picker">Color</label>
-              <input type="color" id="color-picker" />
+          <div class="container d-flex justify-content-center py-3 align">
+            <div class="px-2 align-self-end">
+              <label  for="color-picker">Color</label>
+              <input type="color" id="color-picker"/>
             </div>
-            <div class="sketchboard__controls__eraser">
+            <div class="px-2 align-self-end">
               <label for="eraser">Eraser</label>
-              <input type="checkbox" id="eraser" />
-            </div>
-            <div class="sketchboard__controls__clear">
-              <button class = "btn btn-secondary" id="clear">Clear</button>
+              <input type="checkbox" id="eraser"/>
             </div>
           </div>
+          <button class="btn btn-danger" id="clear">Clear</button>
         </div>
       </div>
     </div>

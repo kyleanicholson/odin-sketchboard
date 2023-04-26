@@ -33,11 +33,10 @@
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  caret-color: transparent;
 }
 
 .sketchboard-container {
-  align-items: center;
-  align-content: center;
   flex-basis:var(--sketchboard-container-height);
   width: 100%;
 }
@@ -49,31 +48,6 @@
 }
 /* Controls formatting */
 
-.sketchboard__controls h4 {
-  margin: 1rem;
-  /* padding: .25rem; */
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.sketchboard__controls__color label {
-  font-size: 16px;
-  font-weight: bold;
-}
-.sketchboard__controls__color input[type="color"] {
-  width: 100%;
-  height: 30px;
-  padding: 0;
-  margin: 0;
-  border: none;
-  outline: none;
-}
-
-.sketchboard__controls__eraser{
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
 
 #sketchboard__canvas {
   flex-wrap: wrap;
